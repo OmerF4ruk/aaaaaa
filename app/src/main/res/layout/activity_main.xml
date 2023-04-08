@@ -89,89 +89,14 @@
             app:layout_constraintStart_toStartOf="@+id/text_air_hum"
             app:layout_constraintTop_toBottomOf="@+id/text_air_hum" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-<com.google.android.material.card.MaterialCardView>
-    android:layout_width=""
-    android:layout_height=""
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
-        android:layout_width="265dp"
-        android:layout_height="121dp"
-        android:layout_marginTop="35dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"
-        tools:ignore="MissingConstraints">
+<com.google.android.material.card.MaterialCardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingConstraints"
+    android:backgroundTint="@color/cardview_dark_background"
+    app:cardCornerRadius="5dp"
 
-        <TextView
-            android:id="@+id/text_soil"
-            android:layout_width="111dp"
-            android:layout_height="44dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/rounded_corner_view"
-
-            android:gravity="center"
-            android:text="TOPRAK"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-
-            app:layout_constraintTop_toTopOf="parent" />
-
-
-        <TextView
-            android:id="@+id/text_soil_temp"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="48dp"
-            android:layout_marginTop="40dp"
-            android:background="#BCB4B9"
-            android:gravity="center"
-            android:text="ISI"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.383" />
-
-        <TextView
-            android:id="@+id/temp_soil_hum"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="48dp"
-            android:background="@color/purple_200"
-            android:gravity="center"
-            android:text="NEM"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.377" />
-
-        <TextView
-            android:id="@+id/soil_temp"
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="#BBB3B8"
-            android:gravity="center"
-            android:text="0"
-            app:layout_constraintEnd_toEndOf="@+id/text_soil_temp"
-            app:layout_constraintStart_toStartOf="@+id/text_soil_temp"
-            app:layout_constraintTop_toBottomOf="@+id/text_soil_temp" />
-
-        <TextView
-            android:id="@+id/soil_hum"
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="#BA85FB"
-            android:gravity="center"
-            android:text="0"
-            app:layout_constraintEnd_toEndOf="@+id/temp_soil_hum"
-            app:layout_constraintStart_toStartOf="@+id/temp_soil_hum"
-            app:layout_constraintTop_toBottomOf="@+id/temp_soil_hum" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    >
 
 </com.google.android.material.card.MaterialCardView>
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -298,6 +223,87 @@
             app:layout_constraintEnd_toStartOf="@+id/space2"
             app:layout_constraintTop_toTopOf="@+id/space2" />
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="265dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/text_soil"
+            android:layout_width="111dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corner_view"
+
+            android:gravity="center"
+            android:text="TOPRAK"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/text_soil_temp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="40dp"
+            android:background="#BCB4B9"
+            android:gravity="center"
+            android:text="ISI"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.383" />
+
+        <TextView
+            android:id="@+id/temp_soil_hum"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="48dp"
+            android:background="@color/purple_200"
+            android:gravity="center"
+            android:text="NEM"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.377" />
+
+        <TextView
+            android:id="@+id/soil_temp"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#BBB3B8"
+            android:gravity="center"
+            android:text="0"
+            app:layout_constraintEnd_toEndOf="@+id/text_soil_temp"
+            app:layout_constraintStart_toStartOf="@+id/text_soil_temp"
+            app:layout_constraintTop_toBottomOf="@+id/text_soil_temp" />
+
+        <TextView
+            android:id="@+id/soil_hum"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#BA85FB"
+            android:gravity="center"
+            android:text="0"
+            app:layout_constraintEnd_toEndOf="@+id/temp_soil_hum"
+            app:layout_constraintStart_toStartOf="@+id/temp_soil_hum"
+            app:layout_constraintTop_toBottomOf="@+id/temp_soil_hum" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
